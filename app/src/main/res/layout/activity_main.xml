@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvMyCalcu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/tvTitle"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNum1"
+        android:layout_width="124dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:ems="10"
+        android:hint="@string/hint1"
+        android:inputType="number"
+        android:outlineAmbientShadowColor="@color/design_default_color_primary_dark"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMyCalcu" />
+
+    <EditText
+        android:id="@+id/etNum2"
+        android:layout_width="126dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:ems="10"
+        android:hint="Input number"
+        android:inputType="number"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMyCalcu" />
+
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="102dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/ic_launcer_button_shape"
+        android:onClick="ADDBUTTON"
+        android:text="@string/EtAdd"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btSub"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/ic_launcer_button_shape"
+        android:onClick="SUBTRABUTTON"
+        android:text="@string/EtSub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btdivide"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:onClick="DIVIBUTTON"
+        android:background="@drawable/ic_launcer_button_shape"
+        android:text="@string/EtDiv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btSub" />
+
+    <Button
+        android:id="@+id/btMulti"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:onClick="MULTIBUTTON"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_launcer_button_shape"
+        android:text="@string/EtMulti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btAdd" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="137dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="92dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:text="@string/tvResult"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMyCalcu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="tvTitle">My Calculator</string>
+    <string name="hint1">Input number</string>
+    <string name="hint2">Input number</string>
+    <string name="EtAdd">Add</string>
+    <string name="EtSub">Subtract</string>
+    <string name="tvResult">Result</string>
+    <string name="EtDiv">Division</string>
+    <string name="EtMulti">Multiply</string>
+
+
+</resources>
